@@ -1,0 +1,13 @@
+{%  extends 'base.html' %}
+{%  block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<p><input type="SUBMIT" onclick="javascrip:history.back(-1);" value="返回上一页"></p>
+{{ the_plot_all|safe }}
+{{ the_res|safe }}
+</body>
+</html>

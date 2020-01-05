@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>华北四省绿地与园林面积</title>
+</head>
+<style type="text/css">
+        .top{
+            /* 设置宽度高度背景颜色 */
+            height: 50px;
+            width:100%;
+            background:#ffab89;
+            position: fixed; /*固定在顶部*/
+            top: 0;/*离顶部的距离为0*/
+        }
+        .top ul{
+            /* 清除ul标签的默认样式 */
+            width: 80%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .top li {
+            float:left; /* 使li内容横向浮动，即横向排列  */
+            margin-right:50px;  /* 两个li之间的距离*/
+        }
+
+        .top li a{
+           /* 设置链接内容显示的格式*/
+            display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none; /* 去除下划线 */
+        }
+        .top li a:hover{
+            /* 鼠标选中时背景变为黑色 */
+            background-color: #c1e5ff;
+        }
+        .top ul li ul{
+            /* 设置二级菜单 */
+            width: auto;
+            background:coral;
+            position: absolute;
+            display: none; /* 默认隐藏二级菜单的内容 */
+
+        }
+        .top ul li ul li{
+            /* 二级菜单li内容的显示 */
+            margin-right:0;
+            float:none;
+            text-align: center;
+        }
+        .top ul li:hover ul{
+            /* 鼠标选中二级菜单内容时 */
+            display: block;
+        }
+       </style>
+
+
+<body style="display: block; margin: 0 auto; width: 70%;">
+<div style="height: 60px"></div>
+<div class="top">
+                   <center>
+                    <ul>
+                    <li><a href="/">回到首页</a></li>
+                    <li><a href="/index1">2010-2017年世界空气污染程度</a></li>
+                    <li><a href="/index2">2010中国各省空气污染程度</a></li>
+                    <li><a href="/index3">2017中国各省空气污染程度</a></li>
+                      </ul>
+                    </center>
+            </div>
+
+       {{ the_sym|safe }}
+<h1 style="text-align: center">空气质量可视化分析</h1>
+<ul style="align: center">
+    <h3>中国与加拿大PM2.5污染程度历年数据对比</h3>
+    <li>为了更加直观地发现中国地空气污染严重程度，我将中国与澳大利亚2010-2017年间的空气污染程度进行了对比，能看见两国间空气质量明显有很大差距，也再次表明了中国现今的空气质量改善需要我们十分重视。</li>
+    <li>陕西省变化幅度最大。</li>
+    <li>近年我国逐渐提倡天然气代替液化煤气的使用，因为天然气是一种新的清洁能源，产生的污染物与液化煤气相比也大量减少，能在一定程度下减轻室内空气污染程度。因此我还猜想城市天然气的使用普及度与中国空气质量改善是否有联系。于是将华北四省市的天然气供给总量进行了堆叠图的可视化。</li>
+    <h4>结论</h4>
+    <li>从世界上看，近七年空气污染程度中国属于较严重地区，与世界空气质量最好的国家差距十分大。</li>
+    <li>从国内发展看，中国空气质量在七年间已有很大改善，但在国际上仍需努力追赶。</li>
+    <li>绿地与园林面积的大小能在一定程度上影响空气质量，降低大气污染。</li>
+    <li>天然气的逐渐普及对空气质量的改善也有一定成效。</li>
+    <h4>由此得出以下建议：</h4>
+    <li>政府应重视各省市绿地与园林建设，尤其空气污染严重地区，绿化设施能在一定程度上吸收空气中的污染物，对空气起到净化作用。</li>
+    <li>市民应该担当起保护城市绿化设施的责任，共同打造空气质量良好城市。</li>
+    <li>政府应该努力将天然气的使用普及到各大城市，小改变能起到大作用。</li>
+</ul>
+
+</body>
+    </div>
+</html>

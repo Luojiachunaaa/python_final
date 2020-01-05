@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2010-2017世界空气污染程度</title>
+</head>
+<style type="text/css">
+        .top{
+            /* 设置宽度高度背景颜色 */
+            height: 50px;
+            width:100%;
+            background:#ffab89;
+            position: fixed; /*固定在顶部*/
+            top: 0;/*离顶部的距离为0*/
+        }
+        .top ul{
+            /* 清除ul标签的默认样式 */
+            width: 80%;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+
+        }
+        .top li {
+            float:left; /* 使li内容横向浮动，即横向排列  */
+            margin-right:50px;  /* 两个li之间的距离*/
+        }
+
+        .top li a{
+           /* 设置链接内容显示的格式*/
+            display: block; /* 把链接显示为块元素可使整个链接区域可点击 */
+            color:white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none; /* 去除下划线 */
+        }
+        .top li a:hover{
+            /* 鼠标选中时背景变为黑色 */
+            background-color: #c1e5ff;
+        }
+        .top ul li ul{
+            /* 设置二级菜单 */
+            width: auto;
+            background:coral;
+            position: absolute;
+            display: none; /* 默认隐藏二级菜单的内容 */
+
+        }
+        .top ul li ul li{
+            /* 二级菜单li内容的显示 */
+            margin-right:0;
+            float:none;
+            text-align: center;
+        }
+        .top ul li:hover ul{
+            /* 鼠标选中二级菜单内容时 */
+            display: block;
+        }
+       </style>
+
+<body style="display: block; margin: 0 auto; width: 70%;">
+<div style="height: 60px"></div>
+<div class="top">
+                   <center>
+                    <ul>
+                    <li><a href="/">回到首页</a></li>
+                    <li><a href="/index2">2010中国各省空气污染程度</a></li>
+                    <li><a href="/index3">2017中国各省空气污染程度</a></li>
+                    <li><a href="/index4">空气污染程度中澳对比</a></li>
+                      </ul>
+                    </center>
+            </div>
+        {{ the_sym|safe }}
+<h1 style="text-align: center">空气质量可视化分析</h1>
+<ul style="align: center">
+    <h3>2010-2017世界空气污染程度</h3>
+    <li>我将世界各国从2010年-2017年的年pm2.5浓度进行了地图可视化，从以上图可见，中国地区空气污染程度在世界上属于较严重地区，虽在七年间有所改善，但空气污染仍比世界上大部分国家严重。</li>
+    <li>因此，我决定深入探究中国空气污染程度、七年间改善程度以及对空气污染的其他影响因素，以此更加直观地展示给人们，并给人们为改善空气质量提出一些建议。</li>
+</ul>
+
+</body>
+    </div>
+</html>
