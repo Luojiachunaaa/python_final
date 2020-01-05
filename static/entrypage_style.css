@@ -1,0 +1,88 @@
+{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #ffab89;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 20px;
+    weight: 30px;
+    text-decoration: none;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: #bfddff;
+    color: black;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: floralwhite;
+    padding: 20px;
+}
+
+.main {
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: floralwhite;
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ffab89;
+    color: white;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
